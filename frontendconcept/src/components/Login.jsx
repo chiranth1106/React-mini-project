@@ -6,7 +6,7 @@ const Login = () => {
     <div>
       <nav className="nav-container login-nav-Container-page">
         <div className="nav-element login-nav-element">
-            <Link to='/' className="links login-link-page">&#x2190;</Link>
+            <Link to='/' className="links-l login-link-page">&#x2190;</Link>
         </div>
 
         <div className="logo-container login-logo-container">

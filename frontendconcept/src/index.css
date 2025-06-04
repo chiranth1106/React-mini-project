@@ -91,13 +91,17 @@ p{
     text-align: center;
 }
 
+h1, h2 {
+    transition: all 0.3s ease-out;
+}
+
 hr {
     margin-top: 1rem;
     min-width: 85vw;
 }
 
 .m-login-btn {
-    width: 15rem;
+    width: 25rem;
     height: 3.5rem;
     border-radius: 0.5rem;
     border: 0.3px solid #000000d6;
@@ -105,6 +109,7 @@ hr {
     font-size: 20px;
     font-weight: 500;
     background-color: rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease-out;
 }
 
 .m-login-btn:hover{
@@ -208,6 +213,13 @@ body footer {
 .login-nav-element:hover {
     border: 1px solid white;
     transition: all 0.1s ease-in;
+}
+
+.links-l {
+    text-decoration: none;
+    margin: 2rem;
+    font-size: 22px;
+    color: rgba(209, 208, 208, 0.9);
 }
 
 .login-link-page {
@@ -336,5 +348,15 @@ h4 {
 
     .links, .login-btn{
         display: none;
+    }
+
+    h2, h3 {
+        font-size: 30px;
+        transition: all 0.3s ease-in;
+    }
+
+    .m-login-btn {
+        width: 12.5rem;
+        transition: all 0.3s ease-in;
     }
 }
