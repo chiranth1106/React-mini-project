@@ -316,3 +316,25 @@ h4 {
     font-size: 15px;
     transition: all 0.1s ease-in;
 }
+
+.menu-container {
+    display: none;
+}
+
+.menu {
+    width: 25px;
+    height: 2.5px;
+    background-color: white;
+    margin: 5px 0;
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-container, .menu{
+        display: block;
+    }
+
+    .links, .login-btn{
+        display: none;
+    }
+}

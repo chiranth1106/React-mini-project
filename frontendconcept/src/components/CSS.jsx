@@ -64,6 +64,9 @@ const CSS = () => {
             <div className="login-container">
                 <Link to='/login' className="login-link"><button className="login-btn">Get Started</button></Link>
             </div>
+
+            <div className="menu-container"><div className="menu"></div> <div className="menu"></div> <div className="menu"></div></div>
+
         </nav>
         <h1>Welcome to <i>CSS</i>.</h1>
 

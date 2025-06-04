@@ -19,6 +19,8 @@ return (
             <div className="login-container">
                 <Link to='/login' className="login-link"><button className="login-btn">Sign up</button></Link>
             </div>
+
+            <div className="menu-container"><div className="menu"></div> <div className="menu"></div> <div className="menu"></div></div>
         </nav>
 
         <div className="message-conatiner">
