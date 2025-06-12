@@ -37,6 +37,15 @@ const htmlConcepts = [
 
 let [state, setState] = useState(htmlConcepts);
 const [search, setSearch] = useState("");
+const[visiblity, setVisiblity] = useState(false);
+
+    function displayMenu() {
+        setVisiblity(true);
+    }
+
+    function exitMenu() {
+        setVisiblity(false);
+    }
 
 function handleSearch(e) {
     let input = e.target.value;
@@ -63,7 +72,18 @@ function handleSearch(e) {
                 <Link to='/login' className="login-link"><button className="login-btn">Get Started</button></Link>
             </div>
 
-            <div className="menu-container"><div className="menu"></div> <div className="menu"></div> <div className="menu"></div></div>
+            <div onClick={displayMenu} className="menu-container"><div className="menu"></div> <div className="menu"></div> <div className="menu"></div></div>
+
+            {visiblity && (
+                <div className="sidebar-container">
+                    <div className="exit"><button onClick={exitMenu} className="exit-btn">X</button></div>
+                    <Link to='/' className="si-links">Home</Link>
+                    {/* <Link to='/html' className="si-links">HTML</Link> */}
+                    <Link to='/css' className="si-links">CSS</Link>
+                    <Link to='/js' className="si-links">JS</Link>
+                    <Link to='/react' className="si-links">REACT</Link>
+                </div>
+            )}
 
         </nav>
         <h1>Welcome to <i>HTML</i>.</h1>

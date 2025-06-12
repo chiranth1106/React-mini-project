@@ -1,6 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+    const[visiblity, setVisiblity] = useState(false);
+
+    function displayMenu() {
+        setVisiblity(true);
+    }
+
+    function exitMenu() {
+        setVisiblity(false);
+    }
+
 return (
     <div>
         <nav className="nav-container">
@@ -20,7 +31,18 @@ return (
                 <Link to='/login' className="login-link"><button className="login-btn">Sign up</button></Link>
             </div>
 
-            <div className="menu-container"><div className="menu"></div> <div className="menu"></div> <div className="menu"></div></div>
+            <button onClick={displayMenu} className="menu-container"><div className="menu"></div> <div className="menu"></div> <div className="menu"></div></button>
+
+            {visiblity && (
+                <div className="sidebar-container">
+                    <div className="exit"><button onClick={exitMenu} className="exit-btn">X</button></div>
+                    <Link to='/' className="si-links">Home</Link>
+                    <Link to='/html' className="si-links">HTML</Link>
+                    <Link to='/css' className="si-links">CSS</Link>
+                    <Link to='/js' className="si-links">JS</Link>
+                    <Link to='/react' className="si-links">REACT</Link>
+                </div>
+            )}
         </nav>
 
         <div className="message-conatiner">
