@@ -382,6 +382,45 @@ h4 {
     display: none;
 }
 
+.main-signup-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 8rem;
+}
+
+.signup-content-container {
+    min-width: auto;
+    min-height: auto;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.signup-input {
+    width: 20rem;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
+    padding: 2px;
+}
+
+.signup-btn {
+    width: 20rem;
+    height: 2rem;
+    font-size: 16px;
+    background-color: #3636b3;
+    color: white;
+    border: 0.1px solid black;
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
 @media screen and (max-width: 1000px) {
     .menu-container, .menu{
         transition: all 0.3s ease-in;

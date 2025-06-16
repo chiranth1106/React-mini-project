@@ -30,19 +30,19 @@ const Login = () => {
             <br />
             <p className='new-user-message'>New User.?</p>
             <br />
-            <button className="sign-up">Sign up</button>
+            <Link to='/signup'><button className="sign-up">Sign up</button></Link>
           </div>
         </div>
       </div>
 
       <footer>
-            <div className="footer-container">
-                <div className="f-message">
-                    <p>&copy; {new Date().getFullYear()} CHIRANTH. All rights reserved.</p>
-                    <p>Made with love <span className="heart">&#9829; </span>By <i>CHIRANTH</i></p>
-                </div>
-            </div>
-        </footer>
+        <div className="footer-container">
+          <div className="f-message">
+            <p>&copy; {new Date().getFullYear()} CHIRANTH. All rights reserved.</p>
+            <p>Made with love <span className="heart">&#9829; </span>By <i>CHIRANTH</i></p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }

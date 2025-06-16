@@ -5,6 +5,7 @@ import CSS from './components/CSS'
 import JS from './components/JS'
 import REACT from './components/REACT'
 import Login from './components/Login'
+import Signup from './components/Signup'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/js' element={<JS/>}/>
         <Route path='/react' element={<REACT/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
       </Routes>
     </BrowserRouter>
   )
