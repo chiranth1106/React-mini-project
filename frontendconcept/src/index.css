@@ -422,6 +422,17 @@ h4 {
     margin-bottom: 1.5rem;
 }
 
+.signup-btn:hover {
+    background-color: rgba(54, 54, 179, 0.9);
+    transition: all 0.1s ease-in;
+}
+
+.signup-btn:active {
+    transform: scale(0.98);
+    font-size: 15px;
+    transition: all 0.1s ease-in;
+}
+
 @media screen and (max-width: 1000px) {
     .menu-container, .menu{
         transition: all 0.3s ease-in;
