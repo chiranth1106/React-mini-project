@@ -24,6 +24,7 @@ const Signup = () => {
                 <input type="text" placeholder='LastName' className='signup-input'/>
                 <input type="text" placeholder='Phone No' className='signup-input'/>
                 <input type="text" placeholder='E-mail' className='signup-input'/>
+                <input type="password" placeholder='Password' className='signup-input'/>
                 <button className="signup-btn">Sign Up</button>
             </div>
         </div>
